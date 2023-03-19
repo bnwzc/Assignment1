@@ -71,7 +71,11 @@ main{
 
 main h1,h2{
     color:#0000E0;
+    font-family: 'Montserrat', sans-serif;
+}
 
+.color1{
+    color:rgb(62, 114, 135)
 }
 
 @media screen and (max-width:600px){
