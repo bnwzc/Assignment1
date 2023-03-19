@@ -1,6 +1,25 @@
-.container{
+.grid_container{
     display:grid;
     grid-template-columns: repeat(5,1fr);
+}
+
+.space{
+    margin-right:10px;
+}
+
+.padding{
+    padding:15px;
+}
+
+.border-line{
+    border:2px solid skyblue;
+    border-radius: 5px;
+    padding-bottom: 100px;
+    padding-left: 10px;
+
+}
+.background{
+    border-radius: 10px;
 }
 
 h1{
@@ -12,5 +31,28 @@ aside{
 }
 
 main{
-    grid-column:2/5;
+    grid-column:2/-1;
 }
+
+footer{
+    display: grid;
+    grid-column:2/-1;
+}
+
+footer p{
+    grid-column:3/4;
+    text-align: center;
+}
+footer div{
+    grid-column:3/4;
+    text-align: center;
+}
+.flex_container1{
+    display:flex;
+    justify-content: space-between;
+}
+.flex_container2{
+    display:flex;
+    justify-content: end;
+}
+
