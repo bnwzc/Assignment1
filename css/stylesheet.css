@@ -6,19 +6,17 @@
 
 .space{
     margin-right:10px;
+    margin-left:10px;
 }
 
 .padding{
     padding:15px;
 }
-
-.border-line{
-    border:2px solid skyblue;
-    border-radius: 5px;
-    padding-bottom: 120px;
-    padding-left: 10px;
-
+textarea{
+    border-radius: 10px;
+    border: 3px solid black;
 }
+
 .background{
     border-radius: 10px;
     padding-top: 15px;
