@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <script src = "scripts/script.js" defer></script>
 </head>
 <body style="margin:0">
     <div class="grid_container" style="height: 100vh">
@@ -31,7 +32,7 @@
             </div>
             <div class="flex_container1" >
                 <button class="space background padding" style="background-color: #375F68" type="button">New Note</button>
-                <button class="space background padding" style="background-color:#56536A" type="button">Dark Theme</button>
+                <button class="space background padding" style="background-color:#56536A" type="button" id="darker" onclick="darker()">Dark Theme</button>
             </div>
             <div style="display:flex">
                 <textarea id="note" name="note" rows="8" cols="153" class="space">This is a placeholder</textarea>
