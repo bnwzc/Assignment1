@@ -35,10 +35,9 @@ main{
 }
 
 footer{
-    display: grid;
-    grid-column:2/-1;
-    padding-bottom: 50vh;
-    
+    position: absolute;
+    bottom: 0;
+    left:50%;
 }
 
 footer h2{
@@ -59,12 +58,12 @@ footer div{
 }
 
 body aside{
-    color:#0000E0;
-    background-color: #E5E0E0;
+    color:#256993;
+    background-color: #FAF4EC;
 }
 
 main{
-    background-color: #EADCDC;
+    background-color: #F3E9DE;
 
 }
 
@@ -90,6 +89,18 @@ textarea{
         text-align: center;
         list-style-type: none;
     }
+    footer{
+        left:auto
+    }
 
 
+}
+
+.darker1{
+    background-color: #1f1f2c;
+    color:#F3E9DE;
+}
+.darker2{
+    background-color: #1c204d;
+    color:aliceblue;
 }
