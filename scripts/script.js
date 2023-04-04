@@ -30,3 +30,15 @@ function hidden(event)
     }
 }
 document.addEventListener("click",hidden)
+
+function display(event)
+{
+    if((event.target.tagName === "BUTTON")&&(event.target.id === "newnote")&&(document.querySelector("#note").style.display === "none"))
+    {
+        document.querySelector("#note").style.display = "initial"
+        document.querySelector("#save").style.display = "initial"
+        document.querySelector("#cancel").style.display = "initial"
+        document.querySelector("#note").textContent = ""
+    }
+}
+document.addEventListener("click",display)
