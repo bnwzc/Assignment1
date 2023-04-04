@@ -42,3 +42,19 @@ function display(event)
     }
 }
 document.addEventListener("click",display)
+
+var notesArray = [{title:"note one",body:"this is my first note"},{title:"note two",body:"this is my second note"}]
+
+function save(event)
+{
+    if((event.target.tagName === "BUTTON")&&(event.target.id === "save")&&(document.querySelector("#note").value.trim() != ""))
+    {
+        let user_title = prompt("The title of the note")
+        let user_body = document.querySelector("#note").value
+        notesArray.push({title:user_title,body:user_body})
+        let newnote = document.createElement("li")
+        document.querySelector("aside ul").appendChild(newnote)
+        newnote.textContent = notesArray[notesArray.length-1]["title"]
+    }
+}
+document.addEventListener("click",save)
