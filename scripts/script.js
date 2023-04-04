@@ -19,3 +19,14 @@ function darker(event)
 }   
 
 document.addEventListener("click",darker)
+
+function hidden(event)
+{
+    if((event.target.tagName === "BUTTON")&&(event.target.id === "cancel"))
+    {
+        document.querySelector("#note").style.display = "none"
+        document.querySelector("#save").style.display = "none"
+        document.querySelector("#cancel").style.display = "none"
+    }
+}
+document.addEventListener("click",hidden)
