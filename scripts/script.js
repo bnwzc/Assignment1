@@ -58,3 +58,15 @@ function save(event)
     }
 }
 document.addEventListener("click",save)
+
+function search(event)
+{   
+        for(let notes of notesArray)
+        {
+            if(notes["title"] === event.target.textContent)
+            {
+                console.log(notes["body"])
+            }
+        }
+}
+document.querySelector("ul").addEventListener("click",search)
